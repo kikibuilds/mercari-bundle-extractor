@@ -11,7 +11,7 @@ Mercari Bundle Extractor 是一款用于处理 Mercari 月度 Sales Report 的 C
 插件提供两种导出模式：
 
 - **仅 Bundle 商品明细**：只导出 Bundle 订单中提取到的商品。
-- **全部售出商品（Cost Mapping）**：保留普通订单，并将每个 Bundle 拆分成实际商品行，生成一份包含当月所有售出商品的统一表格。
+- **全部售出商品**：保留普通订单，并将每个 Bundle 拆分成实际商品行，生成一份包含当月所有售出商品的统一表格。
 
 生成的合并 CSV 可以直接用于后续的 SKU、Shopify Product 和商品 Cost 匹配，减少手动查找 Bundle 订单、复制链接、逐个下载 Listing 信息以及重新合并表格的工作。
 
@@ -42,7 +42,7 @@ Mercari Bundle Extractor 是一款用于处理 Mercari 月度 Sales Report 的 C
 2. 打开扩展并导入 Mercari 月度 Sales Report CSV。
 3. 点击“开始 / 继续”，让扩展逐笔读取 Bundle 订单。
 4. 如有需要，可以暂停或重试异常订单；关闭弹窗不会丢失进度。
-5. 完成后选择“仅 Bundle 商品明细”或“全部售出商品（Cost Mapping）”。
+5. 完成后选择“仅 Bundle 商品明细”或“全部售出商品”。
 6. 下载 CSV，用于后续的 Shopify SKU 和 Cost Mapping。
 
 ### 状态说明
@@ -67,7 +67,7 @@ It automatically identifies bundle orders, opens the corresponding Mercari order
 The extension provides two export modes:
 
 - **Bundle Items Only**: Exports only the individual items extracted from bundle orders.
-- **All Sold Items (Cost Mapping)**: Keeps regular orders as individual rows and expands each bundle into its actual sold items, producing one consolidated file for the entire reporting period.
+- **All Sold Items**: Keeps regular orders as individual rows and expands each bundle into its actual sold items, producing one consolidated file for the entire reporting period.
 
 The consolidated CSV is designed for downstream SKU, Shopify product, and inventory cost mapping. It eliminates much of the manual work previously required to locate bundle orders, open individual order links, download listing information, and merge the results back into the original sales report.
 
@@ -98,7 +98,7 @@ The consolidated CSV is designed for downstream SKU, Shopify product, and invent
 2. Open the extension and import a monthly Mercari Sales Report CSV.
 3. Click **Start / Continue** to process each bundle order.
 4. Pause or retry problem orders as needed; closing the popup does not erase progress.
-5. Select **Bundle Items Only** or **All Sold Items (Cost Mapping)**.
+5. Select **Bundle Items Only** or **All Sold Items**.
 6. Download the CSV for Shopify SKU and cost mapping.
 
 ### Extraction Statuses
